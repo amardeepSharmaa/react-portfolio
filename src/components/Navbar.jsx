@@ -42,26 +42,23 @@ export default function Navbcar() {
 
     if (!sections.length) return;
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const visibleSections = entries
-          .filter((entry) => entry.isIntersecting)
-          .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
+    const updateActiveSection = () => {
+      const activationLine = window.innerHeight * 0.35;
+      const currentSection = sections.reduce((active, section) =>
+        section.getBoundingClientRect().top <= activationLine ? section.id : active,
+      sections[0].id);
 
-        if (visibleSections.length > 0) {
-          setActiveSection(visibleSections[0].target.id);
-        }
-      },
-      {
-        root: null,
-        threshold: [0.15, 0.3, 0.5, 0.7],
-        rootMargin: "-20% 0px -55% 0px",
-      }
-    );
+      setActiveSection(currentSection);
+    };
 
-    sections.forEach((section) => observer.observe(section));
+    updateActiveSection();
+    window.addEventListener("scroll", updateActiveSection, { passive: true });
+    window.addEventListener("resize", updateActiveSection);
 
-    return () => observer.disconnect();
+    return () => {
+      window.removeEventListener("scroll", updateActiveSection);
+      window.removeEventListener("resize", updateActiveSection);
+    };
   }, [location.pathname]);
 
   const go = (id) => {

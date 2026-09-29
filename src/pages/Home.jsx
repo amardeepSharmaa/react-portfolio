@@ -38,11 +38,11 @@ export default function Home() {
         <Stats />
         <TechStack />
         <About />
-        <Services />
         <Skills />
         <Process />
         <Experience />
         <Projects />
+        <Services />
         <WhyMe />
         {/* <Github /> */}
         {/* <Testimonials /> */}
