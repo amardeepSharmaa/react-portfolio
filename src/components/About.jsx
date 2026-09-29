@@ -21,7 +21,7 @@ export default function About() {
               {points.map((point) => <div key={point}><Check size={16} />{point}</div>)}
             </div>
             <div className="about-actions">
-              <a className="btn-primary" href={profile.resume} download>Download Resume <ArrowUpRight size={17} /></a>
+              {/* <a className="btn-primary" href={profile.resume} download>Download Resume <ArrowUpRight size={17} /></a> */}
               <button className="btn-ghost" onClick={() => document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" })}>Explore Projects</button>
             </div>
           </motion.div>
