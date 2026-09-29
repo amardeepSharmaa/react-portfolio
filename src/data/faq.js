@@ -7,5 +7,5 @@ export default [
   ["Do you use Redux Toolkit?", "Yes. Redux Toolkit is included in the core state-management toolkit alongside Context API and React Hooks."],
   ["Can you optimize an existing React application?", "Yes. Typical areas include unnecessary renders, bundle size, lazy loading, code splitting and image optimization."],
   ["Are you available for freelance projects?", "Availability can be configured in the profile data file and shown throughout the portfolio."],
-  ["How can I contact you?", "Use the contact form or the email, LinkedIn and GitHub links configured in src/data/profile.js."]
+  ["How can I contact you?", "You can contact me via email, phone, LinkedIn, or GitHub for project inquiries, collaborations, or freelance opportunities."]
 ].map(([question, answer]) => ({ question, answer }));

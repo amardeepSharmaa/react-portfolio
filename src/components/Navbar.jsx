@@ -101,7 +101,7 @@ export default function Navbcar() {
               </button>
             );
           })}
-          <a href={profile.resume} download>Resume</a>
+          {/* <a href={profile.resume} download>Resume</a> */}
           <button className="nav-talk" onClick={() => go("contact")}>Let's Talk</button>
         </nav>
 

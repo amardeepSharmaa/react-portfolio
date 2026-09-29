@@ -203,6 +203,7 @@ img { max-width: 100%; display: block; }
 .project-meta { display: flex; justify-content: space-between; color: var(--accent); font-size: .67rem; text-transform: uppercase; letter-spacing: .1em; }
 .project-meta span:last-child { color: var(--muted); }
 .project-content h3 { font: 600 1.7rem "Space Grotesk"; letter-spacing: -.04em; margin: 12px 0 9px; }
+.project-content h3:hover a {color: #61dafb;}
 .project-content p { color: var(--muted); font-size: .82rem; max-width: 560px; }
 .project-actions { display: flex; align-items: center; justify-content: space-between; margin-top: 20px; }
 .icon-text, .muted-action { display: inline-flex; align-items: center; gap: 7px; font-size: .73rem; }

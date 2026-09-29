@@ -63,9 +63,9 @@ export default function Hero() {
           </div>
           <div className="hero-actions">
             <button className="btn-primary" onClick={() => go("projects")}>View My Projects <ArrowUpRight size={17} /></button>
-            <a className="btn-ghost" href={profile.resume} download>Download Resume <ArrowDownRight size={17} /></a>
+            <button className="btn-ghost" onClick={() => go("contact")}>Let's work together <ArrowUpRight size={17} /></button>
           </div>
-          <button className="text-link" onClick={() => go("contact")}>Let's work together <span>↗</span></button>
+          {/* <button className="text-link" onClick={() => go("contact")}>Let's work together <span>↗</span></button> */}
         </motion.div>
 
         <motion.div
