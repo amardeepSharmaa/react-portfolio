@@ -8,15 +8,15 @@ export default [
     items: ["Redux", "Redux Toolkit", "Context API", "React Hooks"]
   },
   {
-    title: "Frameworks",
-    items: ["Next.js", "Vite"]
+    title: "Frameworks & Architecture",
+    items: ["Next.js", "Vite", "Micro Frontends", "UI Architecture"]
   },
   {
     title: "API & Data",
     items: ["REST APIs", "Axios", "Fetch API", "JSON"]
   },
   {
-    title: "Tools",
+    title: "Development Tools",
     items: ["Git", "GitHub", "VS Code", "Postman", "Chrome DevTools"]
   },
   {

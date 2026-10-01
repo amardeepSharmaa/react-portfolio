@@ -9,7 +9,7 @@ export default function FAQ() {
   return (
     <section id="faq" className="section-pad section-tint">
       <div className="container faq-grid">
-        <SectionHeading eyebrow="08 / FAQ" title="Questions, answered." text="Short answers to common questions about the frontend work and process." />
+        <SectionHeading eyebrow="09 / FAQ" title="Questions, answered." text="Short answers to common questions about the frontend work and process." />
         <div className="accordion-list">
           {faq.map((item, i) => (
             <div className={`faq-item ${open === i ? "is-open" : ""}`} key={item.question}>

@@ -9,7 +9,7 @@ export default function Services() {
   return (
     <section id="services" className="section-pad section-tint">
       <div className="container">
-        <SectionHeading eyebrow="02 / What I Build" title="Frontend work with a product mindset." text="From greenfield interfaces to existing applications that need structure, speed or new features." />
+        <SectionHeading eyebrow="07 / What I Build" title="Frontend work with a product mindset." text="From greenfield interfaces to existing applications that need structure, speed or new features." />
         <div className="services-grid">
           {services.map((service, i) => {
             const Icon = icons[i];

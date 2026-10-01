@@ -8,3 +8,5 @@ export default [
   ["Performance Optimization", "Smarter rendering, loading, bundles and interaction performance."],
   ["Maintenance & Enhancement", "Bug fixes, refactoring, feature work and incremental improvements."]
 ].map(([title, description]) => ({ title, description }));
+
+

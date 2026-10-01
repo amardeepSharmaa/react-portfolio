@@ -12,7 +12,7 @@ export default function About() {
         <SectionHeading eyebrow="01 / About" title="Building interfaces that work." text="A frontend practice focused on scalable architecture, thoughtful interfaces, performance, and real-world product needs." />
         <div className="about-grid">
           <motion.div className="about-visual" initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
-            <div className="portrait-placeholder"><img src={profile.profilePhoto} alt={profile.name} /></div>
+            <div className="portrait-placeholder overflow-hidden"><img src={profile.profilePhoto} alt={profile.name} /></div>
             <div className="about-stamp">React<br />Frontend<br />Craft</div>
           </motion.div>
           <motion.div className="about-copy" initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
